@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-color: #fef8f8;
+        }
+
+        .box-shadow-hover:hover {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .navbar {
+
+            background-color: #d4e5ff;
+
+        }
+
+        .logo img {
+            width: 25%;
+            height: 215%;
+            border: 1px solid white;
+            border-radius: 50%;
+            align-items: center;
+        }
+
+        .form-input {
+            margin: 14px 0;
+            padding: 5px 3px;
+            width: 90%;
+            font: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+
+        .box {
+            text-align: left;
+        }
+    </style>
+
+    <title>BusinessLogic</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="logo"><img src="./logo.jpg" height="60px" width="60px" alt="logo"></div>
+            <form class="d-flex input-group w-auto">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-md-4 col-sm-6 col-xl-4 my-3">
+                <div class="card d-block h-100 box-shadow-hover pointer">
+                    <div class="pt-3 h-75p align-items-center d-flex justify-content-center">
+                        <!-- <img class="img-fluid w-xs-120p"
+                            src="https://raw.githubusercontent.com/solodev/boxes-with-distinct-hover-effect/master/images/valkyrie.png"
+                            alt="valkyrie ship image"> -->
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h4"><strong>Box-1</strong></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi similique maiores quia ipsum
+                            fugiat repudiandae, temporibus aliquam incidunt cum qui minus doloremque dolor quibusdam
+                            illum eius. Dolorum nisi officia neque sequi adipisci nostrum!.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xl-4 my-3">
+                <div class="card d-block h-100 box-shadow-hover pointer">
+                    <div class="pt-3 h-75p align-items-center d-flex justify-content-center">
+                        <!-- <img class="img-fluid w-xs-120p"
+                            src="https://raw.githubusercontent.com/solodev/boxes-with-distinct-hover-effect/master/images/talon.png"
+                            alt="talon ship image"> -->
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h3 class="h4"><strong>Box-2</strong></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi ea aliquam, quia
+                            totam enim, aliquid inventore fuga, omnis voluptatum nulla quas. Sapiente cumque libero
+                            adipisci recusandae laboriosam! Dolorem neque ex tempore repellendus..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xl-4 my-3">
+                <div class="card d-block h-100 box-shadow-hover pointer">
+                    <div class="pt-3 h-75p align-items-center d-flex justify-content-center">
+                        <!-- <img class="img-fluid w-xs-120p"
+                            src="https://raw.githubusercontent.com/solodev/boxes-with-distinct-hover-effect/master/images/lunar-xplorer.png"
+                            alt="ship image"> -->
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h4"><strong>Box-3</strong></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam reiciendis excepturi
+                            aperiam quod deserunt eligendi molestias ullam maiores consequatur, eveniet consectetur
+                            facere unde omnis necessitatibus velit, in alias odit quasi dolor! Repudiandae, ducimus.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container col-lg-7 mx-auto my-3 text-big text-center">
+        <h1 class="my-2"> Contact From</h1>
+        <form class="mb-3 p-5 border border-5 border-dark box"action="/" method="POST">
+            <input class="form-input" type="text" name="name" placeholder="Enter the name" required><br><br>
+            <input class="form-input" type="email" name="email" placeholder="Enter the Email" required><br><br>
+            <input class="form-input" type="number" name="mno" placeholder="Enter the number" required><br><br>
+
+            <div class="mb-3 border border-5 border-dark box ">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                    <h5 class="p-2"> Please let us know your understanding about Public Cloud</h5>
+                </label>
+                <label class="form-label">
+                    <div class="col">
+                      <input type="checkbox" name="multi[]" value="aws" />AWS Basic Knowledg <br />
+                      <input type="checkbox" name="multi[]" value="azure" /> Azure Basic Knowledge<br />
+                      <input type="checkbox" name="multi[]" value="google" /> Google Cloud Basic Knowledge<br />
+                      <input type="checkbox" name="multi[]" value="noKnowledge" /> No prior knowledge<br />
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-3 border border-5 border-dark box ">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                    <h5 class="p-2"> Please let us know your understanding about Public Cloud</h5>
+                </label>
+                <textarea class="form-control" type="text" name="more" rows="3"
+                    placeholder="Write some message here under 20 word's..!!"></textarea>
+            </div>
+
+            <input class="btn btn-primary" id="submit" type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <!-- <script>
+        document.getElementById('submit').addEventListener('click',function() {
+            Swal.fire('Successful Submitted..!!');
+        })
+    </script> -->
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

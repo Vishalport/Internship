@@ -1,0 +1,25 @@
+{
+  "name": "neww",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "nodemon --watch src/ --exec babel ./src --out-dir ./dist --source-maps --copy-files",
+    "start": "node --use_strict ./lib/index.js",
+    "watch": "nodemon --exec \"npm run build && node lib/index.js\" -e js --ignore lib/",
+    "serve": "nodemon --watch dist/ ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.4",
+    "sweetalert2": "^11.4.32"
+  }
+}
