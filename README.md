@@ -1,2 +1,2 @@
 # Internship
-Vishal@ariseSolution.co.in
+Vishal@ariseSolutions.co.in
